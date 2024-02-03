@@ -1,2 +1,9 @@
-https://www.youtube.com/watch?v=aBgDXd_Brlw
+ec2 and mysql
+https://www.youtube.com/watch?v=aBgDXd_Brlw77
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+install composer on ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
+upload file to s3
+https://www.youtube.com/watch?v=f6pees-RYPs
+connect ec2 to s3
+https://www.youtube.com/watch?v=YYtvL459uWY
