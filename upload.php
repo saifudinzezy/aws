@@ -4,10 +4,14 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client; 
  
 // Amazon S3 API credentials 
+// AWS_REGION
 $region = 'ap-southeast-2'; 
 $version = 'latest'; 
+// AWS_ACCESS_KEY
 $access_key_id = 'AKIA6ODU2ZCHZU4KNZMM'; 
+// AWS_SECRET_KEY
 $secret_access_key = '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'; 
+// S3_BUCKET_NAME
 $bucket = 'sampel'; 
  
  
