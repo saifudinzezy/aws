@@ -7,3 +7,7 @@ upload file to s3
 https://www.youtube.com/watch?v=f6pees-RYPs
 connect ec2 to s3
 https://www.youtube.com/watch?v=YYtvL459uWY
+pvc dan subnet
+https://www.youtube.com/watch?v=C9cJP38Coic
+https://www.youtube.com/watch?v=ApGz8tpNLgo
+https://www.youtube.com/watch?v=eMNymAaxV6k
