@@ -11,4 +11,4 @@ composer
 
 //install library S3
 cd /var/www/html/
-composer require aws/aws-sdk-php
+sudo composer require aws/aws-sdk-php
