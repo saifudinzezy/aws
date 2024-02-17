@@ -78,4 +78,22 @@ if(isset($_POST["submit"])){
         $statusMsg = 'Please select a file to upload.'; 
     } 
 } 
+
+/*
+sudo apt-get update
+sudo apt install php-cli unzip
+cd ~
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+HASH=`curl -sS https://composer.github.io/installer.sig`
+echo $HASH
+php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+composer
+
+cd /var/www/html/
+sudo composer require aws/aws-sdk-php
+
+sudo apt install awscli
+aws s3 ls s3://DOC-EXAMPLE-BUCKET
+*/
 ?>
