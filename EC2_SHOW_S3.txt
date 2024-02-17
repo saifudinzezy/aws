@@ -1,0 +1,2 @@
+sudo apt install awscli
+aws s3 ls s3://DOC-EXAMPLE-BUCKET

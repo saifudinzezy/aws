@@ -13,7 +13,6 @@
 
 <body>
   <div class="container-fluid">
-
     <h1>Data Siswa</h1>
     <hr>
     <?php
@@ -79,7 +78,7 @@
           <td>ID</td>
           <td>NAMA</td>
           <td>ALAMAT</td>
-          <td>AKSI</td>
+          <!-- <td>AKSI</td> -->
         </tr>
       </thead>
       <tbody>
@@ -91,8 +90,8 @@ while($query_data = mysqli_fetch_row($result)) {
   echo "<tr>";
   echo "<td>",$query_data[0], "</td>",
        "<td>",$query_data[1], "</td>",
-       "<td>",$query_data[2], "</td>",
-       "<td><button type='button' class='btn btn-warning edit' data-id='{$query_data[0]}' data-name='{$query_data[1]}' data-address='{$query_data[2]}' value='{$query_data[0]}'>Ubah</button> | <button type='button' class='btn btn-danger delete' data-id='{$query_data[0]}' value='{$query_data[0]}'>Hapus</button></td>";
+       "<td>",$query_data[2], "</td>";
+      //  "<td><button type='button' class='btn btn-warning edit' data-id='{$query_data[0]}' data-name='{$query_data[1]}' data-address='{$query_data[2]}' value='{$query_data[0]}'>Ubah</button> | <button type='button' class='btn btn-danger delete' data-id='{$query_data[0]}' value='{$query_data[0]}'>Hapus</button></td>";
   echo "</tr>";
 }
 ?>
