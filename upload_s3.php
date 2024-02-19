@@ -44,7 +44,8 @@ include_once 'upload.php';
         if (!empty($s3_file_link)) {
             echo $status;
             echo $statusMsg;
-            echo $s3_file_link;
+            // echo $s3_file_link;
+            echo "<img src='".$s3_file_link."' class='img-fluid'>";
         }
     ?>
 </body>
