@@ -2,7 +2,7 @@ sudo apt-get update
 sudo apt-get install apache2
 sudo apt-get install httpd
 sudo apt-get install php php-mysql
-mysq -u root -p -h ${HOSTNAME_RDS}
+mysql -u root -p -h ${HOSTNAME_RDS}
 
 //create database
 create database sampel;
