@@ -1,6 +1,7 @@
 sudo apt-get update
 sudo apt-get install apache2
 sudo apt-get install httpd
+sudo apt-get install apache2 php libapache2-mod-php
 sudo apt-get install php php-mysql
 mysql -u root -p -h ${HOSTNAME_RDS}
 
