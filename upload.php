@@ -8,15 +8,16 @@ use Aws\S3\S3Client;
 $region = 'ap-southeast-2'; 
 $version = 'latest'; 
 // AWS_ACCESS_KEY
-$access_key_id = 'AKIA6ODU2ZCHZU4KNZMM'; 
+$access_key_id = 'AKIAXNGUVRQJWL57K6UO'; 
 // AWS_SECRET_KEY
-$secret_access_key = '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'; 
+$secret_access_key = 'BLuLStX3b6hCyPwu6OQO/fVOKFGA2yF6FE1Tk2h2'; 
 // S3_BUCKET_NAME
-$bucket = 'sampel'; 
+$bucket = 'tejaks2'; 
  
  
 $statusMsg = ''; 
 $status = 'danger'; 
+$file_type = '';
  
 // If file upload form is submitted 
 if(isset($_POST["submit"])){ 
@@ -24,7 +25,7 @@ if(isset($_POST["submit"])){
     if(!empty($_FILES["userfile"]["name"])) { 
         // File info 
         $file_name = basename($_FILES["userfile"]["name"]); 
-        $file_type = pathinfo($file_name, PATHINFO_EXTENSION); 
+        $file_type = pathinfo($file_name, PATHINFO_EXTENSION);
          
         // Allow certain file formats 
         $allowTypes = array('pdf','doc','docx','xls','xlsx','jpg','png','jpeg','gif'); 
@@ -34,7 +35,7 @@ if(isset($_POST["submit"])){
              
             if(is_uploaded_file($file_temp_src)){ 
                 // Instantiate an Amazon S3 client 
-                $s3 = new S3Client([ 
+                $s3 = new S3Client([
                     'version' => $version, 
                     'region'  => $region, 
                     'credentials' => [ 
@@ -64,7 +65,8 @@ if(isset($_POST["submit"])){
                  
                 if(empty($api_error)){ 
                     $status = 'success'; 
-                    $statusMsg = "File was uploaded to the S3 bucket successfully!"; 
+                    $statusMsg = "File was uploaded to the S3 bucket successfully!";
+                    $file_type = $file_type;
                 }else{ 
                     $statusMsg = $api_error; 
                 } 
